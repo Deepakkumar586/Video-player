@@ -9,7 +9,10 @@ const CustomVideoPlayer = () => {
   const [currentNoteIndex, setCurrentNoteIndex] = useState(null);
   const [videoTitle, setVideoTitle] = useState("");
   const [videoDescription, setVideoDescription] = useState("");
-  const videoId = "fdubeMFwuGs"; // video id
+
+
+  // Add any Youtube Video Id
+  const videoId = "CCF1_jI8Prk"; // video id
   const apiKey = "AIzaSyAnLR_7wy64Gh30rPOQ5ouulQFs2M3j-vU"; // Youtube API key
 
   useEffect(() => {
