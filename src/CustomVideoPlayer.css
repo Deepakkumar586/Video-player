@@ -1,0 +1,264 @@
+/* CustomVideoPlayer.css */
+
+body {
+  background-color: #f9f7f3;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notes-container {
+  margin: 0px 0px 0px 150px;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+}
+
+.notes-heading {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.bottom-line {
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(206, 204, 204);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.note-input {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.note-input input {
+  width: 80%;
+  height: 30px;
+  padding: 9px;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 15px;
+  color: rgb(68, 68, 68);
+  font-weight: 200;
+}
+
+.note-button {
+  width: 15%;
+  margin-left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.date-time-notes {
+  font-weight: 600;
+}
+
+.note-time {
+  margin-top: -10px;
+}
+
+.timestamp-color {
+  color: rgb(179, 0, 255);
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+}
+
+.note-item {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.note-text {
+  flex-grow: 1;
+}
+
+.text-note {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgb(214, 210, 210);
+  border-radius: 10px;
+  height: 40px;
+  padding: 5px 0 4px 13px;
+  font-size: 15px;
+}
+
+.notes-update-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 17px;
+}
+
+.edit-button {
+  width: 10%;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(214, 210, 210);
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.delete-button {
+  width: 10%;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(214, 210, 210);
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.video-title {
+  margin-bottom: 10px;
+  margin-left: 35px;
+  width: 700px;
+}
+
+.video-description {
+  margin: 2px 0 10px 35px;
+  width: 700px;
+  font-size: medium;
+  font-style: italic;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .video-container {
+    margin-top: 20px;
+  }
+
+  #player {
+    width: 50%;
+  }
+
+  .notes-container {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+
+  .note-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .note-input input,
+  .note-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 40%;
+  }
+
+  .video-title,
+  .video-description {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+  .notes-container {
+    margin: 0 0 0 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+
+  .note-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .note-input input,
+  .note-button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 40%;
+  }
+
+  .video-title,
+  .video-description {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .notes-container {
+    margin: 0 0 0 50px;
+    width: 100%;
+  }
+
+  .note-input input {
+    width: 70%;
+  }
+
+  .note-button {
+    width: 20%;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 20%;
+  }
+
+  .video-title,
+  .video-description {
+    margin-left: 20px;
+    width: 90%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .notes-container {
+    margin: 0 0 0 150px;
+    width: 100%;
+  }
+
+  .note-input input {
+    width: 80%;
+  }
+
+  .note-button {
+    width: 15%;
+  }
+
+  .edit-button,
+  .delete-button {
+    width: 10%;
+  }
+
+  .video-title,
+  .video-description {
+    margin-left: 35px;
+    width: 700px;
+  }
+}
