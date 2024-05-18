@@ -11,7 +11,7 @@ const CustomVideoPlayer = () => {
   const [videoDescription, setVideoDescription] = useState("");
 
   // Add any Youtube Video Id
-  const videoId = "Th2qSOGPXFo"; // video id
+  const videoId = "PjJ0Ec1ErKg"; // video id
   const apiKey = "AIzaSyAnLR_7wy64Gh30rPOQ5ouulQFs2M3j-vU"; // Youtube API key
 
   useEffect(() => {
